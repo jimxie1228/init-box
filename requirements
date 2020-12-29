@@ -1,0 +1,23 @@
+Init-box requirements
+
+1. Configure vs-code
+    - download vs-code
+    - configure vs-code with all extensions
+
+2. configure zsh shell
+    - download zsh shell
+    - set theme (Whimsy)
+
+3. configure nvim
+    - copy configuration from dotfiles repo
+
+4. download apps [optional]
+    - spotify
+    - chrome
+    - ...
+
+5. configure python, c++
+
+the script should have a progress bar feature. should also be modualrized with 
+the above different modules. the script should run properly on unix boxes and 
+mac. test with vm and mac.

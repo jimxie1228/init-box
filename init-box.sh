@@ -8,7 +8,7 @@
 #               
 echo '================Configuring Git Aceess================'
 echo 'Please put the ssh key under ~/.ssh/jimxie_ssh_id'
-ssh-keygen -t ed22519 -C "jimxie@umich.edu"
+ssh-keygen -t rsa -b 4096 -C "jimxie@umich.edu"
 eval '$(ssh-agent -s)'
 ssh-add ~/.ssh/jimxie_ssh_id
 

@@ -7,11 +7,8 @@
 #               ed22519 algorithm https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 #               
 echo '================Configuring Git Aceess================'
-ssh-keygen -t ed22519 "jimxie@umich.edu" <<KEYGEN-ARGS
-~/.ssh/jimxie_ssh_id
-
-
-KEYGEN-ARGS
+echo 'Please put the ssh key under ~/.ssh/jimxie_ssh_id'
+ssh-keygen -t ed22519 "jimxie@umich.edu"
 eval '$(ssh-agent -s)'
 ssh-add ~/.ssh/jimxie_ssh_id
 

@@ -13,7 +13,7 @@ then
 fi
 echo 'Please put the ssh key under ~/.ssh/jimxie_ssh_id'
 ssh-keygen -t rsa -b 4096 -C "jimxie@umich.edu" -f ~/.ssh/jimxie_ssh_id
-eval '$(ssh-agent -s)'
+eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/jimxie_ssh_id
 
 # add ssh-key to github account
